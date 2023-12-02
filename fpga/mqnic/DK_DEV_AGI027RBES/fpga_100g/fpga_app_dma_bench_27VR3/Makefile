@@ -4,7 +4,7 @@
 # FPGA settings
 FPGA_TOP = fpga
 FPGA_FAMILY = "Agilex"
-FPGA_DEVICE = AGFB014R24A2E2VR0
+FPGA_DEVICE = AGIB027R29A1E2VR3
 
 # Files for synthesis
 SYN_FILES = rtl/fpga.v

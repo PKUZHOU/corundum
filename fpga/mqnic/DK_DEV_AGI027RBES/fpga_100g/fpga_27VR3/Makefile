@@ -4,13 +4,13 @@
 # FPGA settings
 FPGA_TOP = fpga
 FPGA_FAMILY = "Agilex"
-FPGA_DEVICE = AGFB014R24B2E2V
+FPGA_DEVICE = AGIB027R29A1E2VR3
 
 # Files for synthesis
 SYN_FILES = rtl/fpga.v
 SYN_FILES += rtl/fpga_core.v
 SYN_FILES += rtl/sync_signal.v
-SYN_FILES += rtl/eth_mac_dual_quad_wrapper.v
+SYN_FILES += rtl/eth_mac_dual_wrapper.v
 SYN_FILES += rtl/xcvr_ctrl.v
 SYN_FILES += rtl/common/mqnic_core_pcie_ptile.v
 SYN_FILES += rtl/common/mqnic_core_pcie.v
@@ -119,9 +119,8 @@ SYN_FILES += lib/pcie/rtl/pulse_merge.v
 # IP files
 IP_TCL_FILES += ip/reset_release.tcl
 IP_TCL_FILES += ip/pcie.tcl
-IP_TCL_FILES += ip/10g/mac_02.tcl
-IP_TCL_FILES += ip/10g/mac_13.tcl
-IP_TCL_FILES += ip/iopll_etile_ptp.tcl
+IP_TCL_FILES += ip/mac_02.tcl
+IP_TCL_FILES += ip/mac_13.tcl
 
 # QSF files
 QSF_FILES = fpga.qsf
